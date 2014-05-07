@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Example]">
+  <parameter name="param2" value="Laramie2"/>
+  <parameter name="param" value="Laramie"/>
+  <test name="ObjectExitTest simple example(failed)">
+    <parameter name="param2" value="Laramie2"/>
+    <groups>
+      <run>
+        <include name="first"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.trihonda.test.RequestQuote">
+        <methods>
+          <include name="testMe" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.trihonda.test.RequestQuote -->
+    </classes>
+  </test> <!-- ObjectExitTest simple example(failed) -->
+</suite> <!-- Failed suite [Example] -->

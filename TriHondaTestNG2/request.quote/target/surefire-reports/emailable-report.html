@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">ObjectExitTest simple example</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">44.2 seconds</td><td class="numi">first </td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">ObjectExitTest simple example &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.trihonda.test.RequestQuote</td><td><a href="#m1"><b>testMe</b> (first) </a></td><td class="numi">1</td><td>1399470923674</td><td class="numi">44164</td></tr>
+</table>
+<h1>ObjectExitTest simple example</h1>
+<h2 id="m1">com.trihonda.test.RequestQuote:testMe</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Laramie</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'</a>  </a><br/>
+<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'</a>  </a><br/>
+<h3>Failure</h3>
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.no-offer-callout-details &gt; a.request-button.blue-button &gt; span&quot;}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;nycpusagolube.local&apos;, ip: &apos;10.211.55.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: 8dc6064b-0dc0-8e4e-b96f-def7c9406e64
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=20.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+<br/>at com.trihonda.test.RequestQuote.testMe(RequestQuote.java:81)
+<br/>13 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.no-offer-callout-details &gt; a.request-button.blue-button &gt; span&quot;}
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;nycpusagolube.local&apos;, ip: &apos;10.211.55.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.rebuildServerError(ErrorHandler.java:236)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:107)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+<br/>at com.trihonda.test.RequestQuote.testMe(RequestQuote.java:81)
+<br/>13 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

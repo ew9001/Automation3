@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'</a>  </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'</a>  </a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Example" duration-ms="44181" started-at="2014-05-07T13:55:23Z" finished-at="2014-05-07T13:56:07Z">
+    <groups>
+      <group name="first">
+        <method signature="RequestQuote.testMe(java.lang.String)[pri:0, instance:com.trihonda.test.RequestQuote@61dd6a83]" name="testMe" class="com.trihonda.test.RequestQuote"/>
+      </group> <!-- first -->
+    </groups>
+    <test name="ObjectExitTest simple example" duration-ms="44181" started-at="2014-05-07T13:55:23Z" finished-at="2014-05-07T13:56:07Z">
+      <class name="com.trihonda.test.RequestQuote">
+        <test-method status="FAIL" signature="testMe(java.lang.String)[pri:0, instance:com.trihonda.test.RequestQuote@61dd6a83]" name="testMe" duration-ms="44164" started-at="2014-05-07T09:55:23Z" finished-at="2014-05-07T09:56:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laramie]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"div.no-offer-callout-details > a.request-button.blue-button > span"}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'nycpusagolube.local', ip: '10.211.55.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.8.5', java.version: '1.7.0_40'
+Session ID: 8dc6064b-0dc0-8e4e-b96f-def7c9406e64
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=20.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"div.no-offer-callout-details > a.request-button.blue-button > span"}
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'nycpusagolube.local', ip: '10.211.55.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.8.5', java.version: '1.7.0_40'
+Session ID: 8dc6064b-0dc0-8e4e-b96f-def7c9406e64
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=20.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.trihonda.test.RequestQuote.testMe(RequestQuote.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:122)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":"div.no-offer-callout-details > a.request-button.blue-button > span"}
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: 'nycpusagolube.local', ip: '10.211.55.2', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.8.5', java.version: '1.7.0_40'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.rebuildServerError(ErrorHandler.java:236)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:107)
+	... 18 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=262'</a>  </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png'> <img src='/Users/agolubev1/Desktop/TestNG/TriHondaTestNG2/request.quote/Y://TrHondaTestNG1/RequestQuote20140507_095523/hondacar.png ' height='100' width='100'/><a href='http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'>'http://dev.trihonda.pkt-tech.com/vehicles/details?modelId=9&trimId=263'</a>  </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMe -->
+      </class> <!-- com.trihonda.test.RequestQuote -->
+    </test> <!-- ObjectExitTest simple example -->
+  </suite> <!-- Example -->
+</testng-results>

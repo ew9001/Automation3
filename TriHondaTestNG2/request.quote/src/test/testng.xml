@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Example" verbose="1">
+    <parameter name="param" value="Laramie"/>
+    <test name="ObjectExitTest simple example">
+        <parameter name="param2" value="Laramie2"/>
+        <classes>
+            <class name="com.trihonda.test.RequestQuote"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="first"/>
+            </run>
+        </groups>
+    </test>
+</suite>

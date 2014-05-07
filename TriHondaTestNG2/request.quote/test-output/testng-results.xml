@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="157" started-at="2014-05-06T20:10:58Z" finished-at="2014-05-06T20:10:58Z">
+    <groups>
+      <group name="first">
+        <method signature="RequestQuote.testTriHonda()[pri:0, instance:com.trihonda.test.RequestQuote@21604bee]" name="testTriHonda" class="com.trihonda.test.RequestQuote"/>
+      </group> <!-- first -->
+    </groups>
+    <test name="Default test" duration-ms="157" started-at="2014-05-06T20:10:58Z" finished-at="2014-05-06T20:10:58Z">
+      <class name="com.trihonda.test.RequestQuote">
+        <test-method status="FAIL" signature="testTriHonda()[pri:0, instance:com.trihonda.test.RequestQuote@21604bee]" name="testTriHonda" duration-ms="143" started-at="2014-05-06T16:10:58Z" finished-at="2014-05-06T16:10:58Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.trihonda.test.RequestQuote.testTriHonda(RequestQuote.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTriHonda -->
+      </class> <!-- com.trihonda.test.RequestQuote -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
